@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beni Sanjaya - Portofolio Siswa SMKN 12 Surabaya Jurusan Pengembangan Perangkat Lunak dan Gim. Berfokus pada pengembangan software, frontend, dan UI/UX.">
+    <title>Beni Sanjaya | Siswa PPLG & Frontend Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Main Style Sheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Outer Ochre Border Wrapper -->
+    <div class="outer-frame">
+        <div class="inner-container">
+            
+            <!-- Header / Navigasi -->
+            <header class="main-header" id="header">
+                <div class="logo">
+                    <a href="#hero">Beni Sanjaya</a>
+                </div>
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="#hero" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">Tentang</a></li>
+                        <li><a href="#projects" class="nav-link">Projek</a></li>
+                        <li><a href="#contact" class="nav-link">Kontak</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="#" class="btn-resume" id="download-resume-btn">
+                        <span>Unduh CV</span>
+                        <i class="ri-download-line"></i>
+                    </a>
+                    <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Buka Menu">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Navigasi Mobile Overlay -->
+            <div class="mobile-nav" id="mobile-nav">
+                <button class="mobile-nav-close" id="menu-close" aria-label="Tutup Menu">
+                    <i class="ri-close-line"></i>
+                </button>
+                <ul>
+                    <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+                    <li><a href="#about" class="mobile-nav-link">Tentang</a></li>
+                    <li><a href="#projects" class="mobile-nav-link">Projek</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Kontak</a></li>
+                    <li><a href="#" class="mobile-nav-link resume-mobile">Unduh CV <i class="ri-download-line"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <main>
+                <!-- Hero Section -->
+                <section class="hero-section" id="hero">
+                    <div class="hero-content">
+                        <span class="hero-greeting">Halo,</span>
+                        <h1 class="hero-title">Saya Beni Sanjaya.</h1>
+                        <h2 class="hero-subtitle">Web Developer | Siswa PPLG</h2>
+                        <p class="hero-description">
+                            Siswa SMKN 12 Surabaya jurusan Pengembangan Perangkat Lunak dan Gim dengan minat pada pengembangan software, frontend, dan desain UI/UX.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn-primary" id="hero-hire-btn">Hubungi Saya</a>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Stats Divider -->
+                <section class="stats-section" id="stats">
+                    <div class="stats-grid">
+                        <div class="stat-card" id="stat-experience">
+                            <h3 class="stat-number" data-target="1">0</h3>
+                            <p class="stat-label">Tahun Belajar</p>
+                        </div>
+                        <div class="stat-card" id="stat-projects">
+                            <h3 class="stat-number" data-target="3">0</h3>
+                            <p class="stat-label">Projek / Tugas Selesai</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tentang Saya Section -->
+                <section class="about-section" id="about">
+                    <div class="section-header">
+                        <span class="section-tag">Kenali Saya</span>
+                        <h2 class="section-title">Tentang Saya</h2>
+                    </div>
+                    
+                    <div class="about-container">
+                        <!-- Kiri: Bio Card -->
+                        <div class="about-bio-card">
+                            <div class="bio-header">
+                                <div class="bio-meta">
+                                    <h4>Beni Sanjaya</h4>
+                                    <p>Siswa SMKN 12 Surabaya</p>
+                                </div>
+                            </div>
+                            <p class="bio-text">
+                                Memiliki dasar dalam pengembangan web dan database serta bersemangat untuk terus mengembangkan keterampilan di bidang teknologi demi menghasilkan produk digital yang fungsional.
+                            </p>
+                            <div class="bio-socials">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-link"><i class="ri-github-fill"></i></a>
+                                <a href="mailto:beni19sanjaya@gmail.com" aria-label="Email" class="social-link"><i class="ri-mail-line"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Kanan: Interactive Tabs (Keterampilan Teknis, Non-Teknis, Pendidikan) -->
+                        <div class="about-tabs-container">
+                            <div class="tabs-header">
+                                <button class="tab-btn active" data-tab="skills" id="tab-btn-skills">Keterampilan Teknis</button>
+                                <button class="tab-btn" data-tab="softskills" id="tab-btn-softskills">Non-Teknis</button>
+                                <button class="tab-btn" data-tab="education" id="tab-btn-education">Pendidikan</button>
+                            </div>
+                            
+                            <div class="tabs-content">
+                                <!-- Keterampilan Teknis Tab -->
+                                <div class="tab-pane active" id="tab-skills">
+                                    <div class="skills-grid">
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name"><i class="ri-code-box-line"></i> Dasar Pengembangan Frontend</span>
+                                                <span class="skill-percentage">85%</span>
+                                            </div>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar" style="width: 0%" data-width="85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name"><i class="ri-brush-line"></i> Dasar Desain UI/UX</span>
+                                                <span class="skill-percentage">80%</span>
+                                            </div>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar" style="width: 0%" data-width="80%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name"><i class="ri-brain-line"></i> Memahami Algoritma Dasar</span>
+                                                <span class="skill-percentage">75%</span>
+                                            </div>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar" style="width: 0%" data-width="75%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name"><i class="ri-database-2-line"></i> Database Dasar (MySQL)</span>
+                                                <span class="skill-percentage">70%</span>
+                                            </div>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar" style="width: 0%" data-width="70%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Keterampilan Non-Teknis Tab -->
+                                <div class="tab-pane" id="tab-softskills">
+                                    <div class="skills-grid">
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name"><i class="ri-chat-voice-line"></i> Komunikasi</span>
+                                                <span class="skill-percentage">90%</span>
+                                            </div>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar" style="width: 0%" data-width="90%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name"><i class="ri-group-line"></i> Kolaborasi dalam Tim</span>
+                                                <span class="skill-percentage">95%</span>
+                                            </div>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar" style="width: 0%" data-width="95%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name"><i class="ri-shuffle-line"></i> Beradaptasi</span>
+                                                <span class="skill-percentage">85%</span>
+                                            </div>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar" style="width: 0%" data-width="85%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <div class="skill-info">
+                                                <span class="skill-name"><i class="ri-time-line"></i> Manajemen Waktu</span>
+                                                <span class="skill-percentage">80%</span>
+                                            </div>
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar" style="width: 0%" data-width="80%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pendidikan Tab -->
+                                <div class="tab-pane" id="tab-education">
+                                    <div class="timeline">
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="timeline-date">2024 - Sekarang</div>
+                                            <h4 class="timeline-title">SMKN 12 Surabaya</h4>
+                                            <p class="timeline-company">Pengembangan Perangkat Lunak dan Gim (PPLG)</p>
+                                            <p class="timeline-desc">Mempelajari pemrograman perangkat lunak, dasar-dasar coding, pengembangan game, analisis algoritma, dan pemrograman berbasis database.</p>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="timeline-date">2021 - 2024</div>
+                                            <h4 class="timeline-title">SMP Asa Cendekia</h4>
+                                            <p class="timeline-company">Pendidikan Menengah Pertama</p>
+                                            <p class="timeline-desc">Lulus dengan nilai yang baik dan aktif berpartisipasi dalam kegiatan ekstrakurikuler berbasis sains dan teknologi informasi.</p>
+                                        </div>
+                                        <div class="timeline-item">
+                                            <div class="timeline-dot"></div>
+                                            <div class="timeline-date">2015 - 2021</div>
+                                            <h4 class="timeline-title">SDN Pabean 2</h4>
+                                            <p class="timeline-company">Pendidikan Sekolah Dasar</p>
+                                            <p class="timeline-desc">Membangun fondasi akademis yang kuat dan mulai mengenal dasar-dasar penggunaan komputer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Layanan Saya Section -->
+                <section class="services-section" id="services">
+                    <div class="section-header text-center">
+                        <span class="section-tag">Layanan Saya</span>
+                        <h2 class="section-title">Bidang Minat</h2>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card" id="service-frontend">
+                            <div class="service-icon">
+                                <i class="ri-code-s-slash-line"></i>
+                            </div>
+                            <h3>Pengembangan Frontend</h3>
+                            <p>Menerjemahkan ide dan desain visual menjadi kode front-end yang responsif, terstruktur, dan mudah dinavigasi dengan HTML, CSS, dan JavaScript dasar.</p>
+                        </div>
+                        <div class="service-card" id="service-uiux">
+                            <div class="service-icon">
+                                <i class="ri-layout-masonry-line"></i>
+                            </div>
+                            <h3>Desain UI/UX</h3>
+                            <p>Mendesain tampilan halaman digital yang ramah bagi pengguna, menyusun struktur tata letak (wireframing) informasi beasiswa atau travel agar mudah dibaca.</p>
+                        </div>
+                        <div class="service-card" id="service-db">
+                            <div class="service-icon">
+                                <i class="ri-database-2-line"></i>
+                            </div>
+                            <h3>Struktur & Database</h3>
+                            <p>Memahami alur logika pemrograman menggunakan algoritma dasar dan mengelola penyimpanan data sederhana menggunakan database MySQL.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="projects-section" id="projects">
+                    <div class="section-header">
+                        <span class="section-tag">Karya Saya</span>
+                        <h2 class="section-title">Projek & Tugas</h2>
+                    </div>
+
+                    <!-- Category Filters -->
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="all" id="filter-all">Semua Projek</button>
+                        <button class="filter-btn" data-filter="individu" id="filter-individu">Projek Individu</button>
+                        <button class="filter-btn" data-filter="kelompok" id="filter-kelompok">Projek Berkelompok</button>
+                    </div>
+
+                    <!-- Projects Grid -->
+                    <div class="projects-grid" id="projects-grid">
+                        
+                        <!-- Projek 3: Website Informasi Beasiswa (Kelompok) -->
+                        <div class="project-card" data-category="kelompok" data-id="3">
+                            <div class="project-image-container">
+                                <!-- CSS Mockup: Beasiswa -->
+                                <div class="project-css-mockup project-mockup-crypto">
+                                    <div class="mockup-header">
+                                        <span class="mockup-dot red"></span>
+                                        <span class="mockup-dot yellow"></span>
+                                        <span class="mockup-dot green"></span>
+                                        <span class="mockup-url">info-beasiswa.net</span>
+                                    </div>
+                                    <div class="mockup-body">
+                                        <div class="mockup-sidebar" style="width: 35px; background: #162235;"></div>
+                                        <div class="mockup-main" style="padding: 0.6rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1;">
+                                            <div class="mockup-topbar" style="height: 12px; background: #1e304a; border-radius: 2px; width: 50%;"></div>
+                                            <div style="display: flex; flex-direction: column; gap: 3px; margin-top: 0.2rem;">
+                                                <div style="height: 15px; background: #1f3552; border-radius: 2px; display: flex; align-items: center; padding: 0 4px; justify-content: space-between;">
+                                                    <div style="width: 40%; height: 3px; background: #fff; border-radius: 1px;"></div>
+                                                    <div style="width: 15%; height: 6px; background: #27c93f; border-radius: 2px;"></div>
+                                                </div>
+                                                <div style="height: 15px; background: #1f3552; border-radius: 2px; display: flex; align-items: center; padding: 0 4px; justify-content: space-between;">
+                                                    <div style="width: 50%; height: 3px; background: #fff; border-radius: 1px;"></div>
+                                                    <div style="width: 15%; height: 6px; background: #ffbd2e; border-radius: 2px;"></div>
+                                                </div>
+                                                <div style="height: 15px; background: #1f3552; border-radius: 2px; display: flex; align-items: center; padding: 0 4px; justify-content: space-between;">
+                                                    <div style="width: 30%; height: 3px; background: #fff; border-radius: 1px;"></div>
+                                                    <div style="width: 15%; height: 6px; background: #27c93f; border-radius: 2px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <span class="project-card-cat">Projek Berkelompok</span>
+                                        <h3 class="project-card-title">Informasi Beasiswa</h3>
+                                        <p class="project-card-short-desc">Mengembangkan website informasi beasiswa sebagai Frontend Developer.</p>
+                                        <button class="btn-project-detail">Detail Tugas <i class="ri-arrow-right-up-line"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projek 4: Tretan Explore (Kelompok) -->
+                        <div class="project-card" data-category="kelompok" data-id="4">
+                            <div class="project-image-container">
+                                <!-- CSS Mockup: Tretan Explore -->
+                                <div class="project-css-mockup project-mockup-tretan">
+                                    <div class="mockup-header">
+                                        <span class="mockup-dot red"></span>
+                                        <span class="mockup-dot yellow"></span>
+                                        <span class="mockup-dot green"></span>
+                                        <span class="mockup-url">pplgrolas.my.id/tretan-explore</span>
+                                    </div>
+                                    <div class="mockup-body" style="flex-direction: column; padding: 0; background: #1a2a3a; position: relative; overflow: hidden;">
+                                        <!-- Navbar -->
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0.6rem; background: rgba(255,255,255,0.95); z-index: 2; position: relative;">
+                                            <div style="display: flex; align-items: center; gap: 4px;">
+                                                <div style="width: 6px; height: 6px; border-radius: 50%; background: #e59f3c; border: 1px solid #c0782a;"></div>
+                                                <div style="height: 5px; width: 40px; background: #1a1a1a; border-radius: 1px;"></div>
+                                            </div>
+                                            <div style="display: flex; gap: 6px;">
+                                                <div style="height: 4px; width: 20px; background: #e59f3c; border-radius: 1px;"></div>
+                                                <div style="height: 4px; width: 18px; background: #888; border-radius: 1px;"></div>
+                                                <div style="height: 4px; width: 18px; background: #888; border-radius: 1px;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Hero bg -->
+                                        <div style="flex: 1; background: linear-gradient(160deg, #3a6073 0%, #1a2a3a 60%, #16213e 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 0.6rem; gap: 5px; position: relative;">
+                                            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: repeating-linear-gradient(135deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 10px); pointer-events: none;"></div>
+                                            <div style="height: 10px; width: 70%; background: rgba(255,255,255,0.9); border-radius: 2px; font-size: 6px; display: flex; align-items: center; padding: 0 4px; color: #111; font-weight: bold;"></div>
+                                            <div style="height: 5px; width: 55%; background: rgba(255,255,255,0.5); border-radius: 1px;"></div>
+                                            <div style="height: 5px; width: 45%; background: rgba(255,255,255,0.5); border-radius: 1px;"></div>
+                                            <div style="height: 14px; width: 40%; background: #e59f3c; border-radius: 3px; margin-top: 4px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <span class="project-card-cat">Projek Berkelompok</span>
+                                        <h3 class="project-card-title">Tretan Explore</h3>
+                                        <p class="project-card-short-desc">Website edukasi wisata Pulau Madura dengan fitur galeri, game, dan review.</p>
+                                        <button class="btn-project-detail">Detail Tugas <i class="ri-arrow-right-up-line"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Projek 5: TravelYuk (Individu) -->
+                        <div class="project-card" data-category="individu" data-id="5">
+                            <div class="project-image-container">
+                                <!-- CSS Mockup: TravelYuk -->
+                                <div class="project-css-mockup project-mockup-travelyuk">
+                                    <div class="mockup-header">
+                                        <span class="mockup-dot red"></span>
+                                        <span class="mockup-dot yellow"></span>
+                                        <span class="mockup-dot green"></span>
+                                        <span class="mockup-url">travelyuk.com</span>
+                                    </div>
+                                    <div class="mockup-body" style="flex-direction: column; padding: 0; background: #1a3a4a; overflow: hidden;">
+                                        <!-- Navbar -->
+                                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.35rem 0.6rem; background: rgba(0,0,0,0.3); z-index: 2; position: relative;">
+                                            <div style="height: 5px; width: 42px; background: white; border-radius: 1px;"></div>
+                                            <div style="display: flex; gap: 5px; align-items: center;">
+                                                <div style="height: 4px; width: 15px; background: rgba(255,255,255,0.7); border-radius: 1px;"></div>
+                                                <div style="height: 4px; width: 15px; background: rgba(255,255,255,0.7); border-radius: 1px;"></div>
+                                                <div style="height: 12px; width: 24px; background: #27c93f; border-radius: 10px;"></div>
+                                            </div>
+                                        </div>
+                                        <!-- Hero -->
+                                        <div style="flex: 1; background: linear-gradient(135deg, #1e6e8a 0%, #0d3d50 50%, #082a38 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0.5rem; gap: 5px; text-align: center;">
+                                            <div style="height: 9px; width: 75%; background: rgba(255,255,255,0.9); border-radius: 2px;"></div>
+                                            <div style="height: 9px; width: 55%; background: rgba(255,255,255,0.9); border-radius: 2px;"></div>
+                                            <div style="height: 5px; width: 65%; background: rgba(255,255,255,0.45); border-radius: 1px; margin-top: 2px;"></div>
+                                            <!-- Search bar -->
+                                            <div style="display: flex; gap: 4px; margin-top: 4px; width: 90%;">
+                                                <div style="flex: 1; height: 13px; background: rgba(255,255,255,0.92); border-radius: 3px;"></div>
+                                                <div style="height: 13px; width: 25px; background: #e5a020; border-radius: 3px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <span class="project-card-cat">Projek Individu</span>
+                                        <h3 class="project-card-title">TravelYuk</h3>
+                                        <p class="project-card-short-desc">Platform travel untuk menemukan inspirasi destinasi dan rekomendasi perjalanan.</p>
+                                        <button class="btn-project-detail">Detail Tugas <i class="ri-arrow-right-up-line"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Hubungi Saya Section -->
+                <section class="contact-section" id="contact">
+                    <div class="section-header">
+                        <span class="section-tag">Kontak</span>
+                        <h2 class="section-title">Hubungi Saya</h2>
+                    </div>
+
+                    <div class="contact-container">
+                        <!-- Kiri: Info Kontak -->
+                        <div class="contact-info">
+                            <div class="info-card" id="contact-email-card">
+                                <div class="info-icon">
+                                    <i class="ri-mail-send-line"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Email Saya</span>
+                                    <a href="mailto:beni19sanjaya@gmail.com">beni19sanjaya@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-card" id="contact-phone-card">
+                                <div class="info-icon">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Telepon Saya</span>
+                                    <a href="tel:085933878077">0859-3387-8077</a>
+                                </div>
+                            </div>
+                            <div class="info-card" id="contact-location-card">
+                                <div class="info-icon">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div class="info-text">
+                                    <span>Alamat</span>
+                                    <p>Jl. Alastipis Kavling 1 Royal Pabean</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kanan: Form Kontak -->
+                        <div class="contact-form-card">
+                            <form id="contact-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="contact-name" name="name" placeholder=" " required autocomplete="name">
+                                        <label for="contact-name">Nama Anda</label>
+                                        <span class="error-msg" id="name-error">Mohon masukkan nama Anda</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="contact-email" name="email" placeholder=" " required autocomplete="email">
+                                        <label for="contact-email">Email Anda</label>
+                                        <span class="error-msg" id="email-error">Mohon masukkan email yang valid</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="contact-subject" name="subject" placeholder=" " required autocomplete="off">
+                                    <label for="contact-subject">Subjek</label>
+                                    <span class="error-msg" id="subject-error">Mohon masukkan subjek</span>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="contact-message" name="message" rows="5" placeholder=" " required></textarea>
+                                    <label for="contact-message">Pesan Anda</label>
+                                    <span class="error-msg" id="message-error">Mohon masukkan pesan</span>
+                                </div>
+                                
+                                <button type="submit" class="btn-submit" id="form-submit-btn">
+                                    <span class="btn-text">Kirim Pesan</span>
+                                    <i class="ri-send-plane-fill btn-icon"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="main-footer">
+                <div class="footer-content">
+                    <p>&copy; 2026 Beni Sanjaya. Hak Cipta Dilindungi.</p>
+                    <p class="footer-subtext">Dibuat dengan dedikasi dan kode yang rapi.</p>
+                </div>
+            </footer>
+
+            <!-- Detail Case Study Modal -->
+            <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+                <div class="modal-card">
+                    <button class="modal-close-btn" id="modal-close" aria-label="Tutup detail">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <div class="modal-body-scroll">
+                        <div class="modal-hero-visual" id="modal-project-visual">
+                            <!-- Visual content is dynamically injected -->
+                        </div>
+                        <div class="modal-info-grid">
+                            <div class="modal-main-desc">
+                                <span class="modal-project-cat" id="modal-project-category">Kategori Projek</span>
+                                <h3 class="modal-project-title" id="modal-project-title">Judul Projek</h3>
+                                <p class="modal-project-desc" id="modal-project-description">
+                                    Studi kasus detail akan dimuat di sini.
+                                </p>
+                            </div>
+                            <div class="modal-sidebar-meta">
+                                <div class="meta-item">
+                                    <span class="meta-label">Jenis Projek</span>
+                                    <span class="meta-value" id="modal-project-client">Individu / Kelompok</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Peran</span>
+                                    <span class="meta-value" id="modal-project-role">Frontend / Desainer</span>
+                                </div>
+                                <div class="meta-item">
+                                    <span class="meta-label">Teknologi</span>
+                                    <div class="meta-tags-list" id="modal-project-tech">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                    </div>
+                                </div>
+                                <div class="modal-links">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Main JS Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
