@@ -226,7 +226,7 @@ const projectData = {
         role: "Frontend Developer",
         tech: ["HTML5", "CSS3 Flexbox", "Desain Layout", "Kerjasama Tim"],
         description: "Dalam projek berkelompok ini, saya berperan sebagai Frontend Developer untuk membangun portal pencarian dan penyajian informasi beasiswa. Saya bertanggung jawab mendesain layout halaman informasi agar terstruktur rapi dan mudah dibaca oleh calon pendaftar, serta bekerja sama erat dengan anggota tim untuk mengintegrasikan tampilan frontend dengan kode website utama.",
-        visualHTML: `<img src="assets/beasiswa.png" alt="Website Informasi Beasiswa" style="width:100%;height:100%;object-fit:cover;">`,
+        visualHTML: `<img src="assets/Website Informasi Beasiswa.png" alt="Website Informasi Beasiswa" style="width:100%;height:100%;object-fit:cover;">`,
         liveLink: "",
         sourceLink: ""
     },
@@ -237,7 +237,7 @@ const projectData = {
         role: "Backend Developer & UI/UX Designer",
         tech: ["HTML", "CSS", "JavaScript", "PHP"],
         description: "Tretan Explore adalah website edukasi wisata Pulau Madura yang dikembangkan secara tim. Website ini menampilkan informasi budaya, galeri destinasi wisata, fitur game edukatif, serta halaman review dari pengguna. Dalam projek ini saya berperan sebagai Backend Developer sekaligus UI/UX Designer, membangun logika backend dan merancang antarmuka yang menarik serta mudah digunakan oleh pengunjung.",
-        visualHTML: `<img src="assets/tretan-explore.png" alt="Tretan Explore" style="width:100%;height:100%;object-fit:cover;">`,
+        visualHTML: `<img src="assets/Tretan Explore.png" alt="Tretan Explore" style="width:100%;height:100%;object-fit:cover;">`,
         liveLink: "",
         sourceLink: ""
     },
@@ -248,7 +248,7 @@ const projectData = {
         role: "Backend Developer & UI/UX Designer",
         tech: ["HTML", "CSS", "JavaScript"],
         description: "TravelYuk adalah platform travel yang dikembangkan secara tim untuk membantu pengguna menemukan inspirasi destinasi wisata, tips perjalanan, dan rekomendasi terbaik untuk pengalaman yang tak terlupakan. Saya berperan sebagai Backend Developer sekaligus UI/UX Designer, bertanggung jawab atas logika website dan perancangan antarmuka yang bersih dan intuitif.",
-        visualHTML: `<img src="assets/travelyuk.png" alt="TravelYuk" style="width:100%;height:100%;object-fit:cover;">`,
+        visualHTML: `<img src="assets/TravelYuk.png" alt="TravelYuk" style="width:100%;height:100%;object-fit:cover;">`,
         liveLink: "",
         sourceLink: ""
     }
